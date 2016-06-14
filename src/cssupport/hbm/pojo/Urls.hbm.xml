@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 8 Jul, 2014 4:49:09 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="NQSupport" name="cssupport.hbm.pojo.Urls" table="URLS">
+    <id name="id" type="java.lang.Integer">
+      <column name="ID"/>
+      <generator class="identity"/>
+    </id>
+    <property name="type" type="string">
+      <column length="10" name="Type"/>
+    </property>
+    <property name="url" type="string">
+      <column length="50" name="URL"/>
+    </property>
+    <property name="hostName" type="string">
+      <column length="10" name="HostName"/>
+    </property>
+    <property name="ip" type="string">
+      <column length="15" name="IP"/>
+    </property>
+    <property name="port" type="java.lang.Integer">
+      <column name="PORT"/>
+    </property>
+    <property name="servlet" type="string">
+      <column length="50" name="Servlet"/>
+    </property>
+    <property name="status" type="java.lang.Boolean">
+      <column name="Status"/>
+    </property>
+  </class>
+</hibernate-mapping>
